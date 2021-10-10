@@ -61,11 +61,38 @@ class _MyHomePageState extends State<MyHomePage> {
                     "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg"
                 ),
               ),
-              Container(
-                height: 200,
-                  width: 250,
-                  child: Image.asset("assets/images/img2.jpg")
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                      height: 200,
+                      width: 150,
+                      child: Image.asset("assets/images/img2.jpg")
+                  ),
+                  Container(
+                      height: 200,
+                      width: 150,
+                      child: Image.asset("assets/images/img2.jpg")
+                  ),Container(
+                      height: 200,
+                      width: 150,
+                      child: Image.asset("assets/images/img2.jpg")
+                  ),
+                  Container(
+                      height: 200,
+                      width: 150,
+                      child: Image.asset("assets/images/img2.jpg")
+                  ),
+                  Container(
+                      height: 200,
+                      width: 150,
+                      child: Image.asset("assets/images/img2.jpg")
+                  ),
+                ],
               ),
+            ),
+
             ],
           ),
         ),
