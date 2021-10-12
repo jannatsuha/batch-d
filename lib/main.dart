@@ -1,3 +1,4 @@
+import 'package:batch_d/second_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -37,6 +38,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             children: [
+
+              ElevatedButton(
+                  onPressed:(){
+                    Navigator.push(context, MaterialPageRoute
+                      (builder: (context)=>SecondPage()));
+
+                  },
+                  child: Text("Go To Second page")
+              ),
+
               SizedBox(
                 height: 15,
               ),
@@ -92,7 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-
             ],
           ),
         ),
